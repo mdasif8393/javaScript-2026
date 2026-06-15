@@ -1,8 +1,3 @@
-
-let sum = add(2, 3);
-console.log(sum);
-
-const add = function (a, b) {
-
+const add = () => {
     return a + b;
 }
