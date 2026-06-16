@@ -1,19 +1,14 @@
 const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 15,
-    fullName: function () {
-        return this.firstName + " " + this.lastName;
-    },
-    isVoter: function () {
-        if (this.age >= 18) {
-            return "Voter";
-        }
-        else {
-            return "Is not voter";
-        }
+    name: "John",
+    age: 30,
+    myCars: {
+        car1: "Ford",
+        car2: "BMW",
+        car3: "Fiat"
     }
 };
 
-const voter = person.isVoter();
-console.log(voter);
+const car1 = "car1";
+const car2 = "car2";
+
+console.log(person[car1][car2]);
