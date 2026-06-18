@@ -1,14 +1,17 @@
-const person = {
-    name: "John",
-    age: 30,
-    myCars: {
-        car1: "Ford",
-        car2: "BMW",
-        car3: "Fiat"
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eye = eye;
+    this.fullName = function () {
+        return this.firstName + " " + this.lastName;
     }
 };
 
-const car1 = "car1";
-const car2 = "car2";
+const myFather = new Person("John", "Doe", 50, "blue");
 
-console.log(person[car1][car2]);
+
+Person.changeName = function (name) {
+    this.lastName = name;
+}
+myFather.changeName("Zaman");
