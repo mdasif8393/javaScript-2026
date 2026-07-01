@@ -1,5 +1,11 @@
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const cart = ["Rice", "Oil", "Egg", "Milk"];
 
-const r = fruits.slice(2, 4);
+const isEggExists = cart.includes("Egg");
 
-console.log(r);
+if (isEggExists) {
+    console.log("Egg is in the cart");
+
+}
+else {
+    console.log("Buy Egg");
+}
