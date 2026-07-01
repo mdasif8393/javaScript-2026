@@ -1,9 +1,6 @@
-const cars = [
-    { type: "Volvo", year: 2016 },
-    { type: "Saab", year: 2001 },
-    { type: "BMW", year: 2010 }
-];
+const numbers = [45, 4, 9, 16, 25];
 
-cars.sort(function (a, b) { return a.type - b.type })
-
-console.log(cars);
+numbers.forEach(val => {
+    console.log(val);
+    console.log("_______");
+})
