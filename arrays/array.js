@@ -1,11 +1,9 @@
-const cart = ["Rice", "Oil", "Egg", "Milk"];
+const cars = [
+    { type: "Volvo", year: 2016 },
+    { type: "Saab", year: 2001 },
+    { type: "BMW", year: 2010 }
+];
 
-const isEggExists = cart.includes("Egg");
+cars.sort(function (a, b) { return a.type - b.type })
 
-if (isEggExists) {
-    console.log("Egg is in the cart");
-
-}
-else {
-    console.log("Buy Egg");
-}
+console.log(cars);
