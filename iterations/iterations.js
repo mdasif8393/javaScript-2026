@@ -1,4 +1,5 @@
-for (let i = 1; i <= 10; i++) {
+const numbers = [45, 4, 9, 16, 25];
 
-    console.log(i);
+for (let x in numbers) {
+    console.log(numbers[x]);
 }
