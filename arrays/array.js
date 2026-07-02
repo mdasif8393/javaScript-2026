@@ -1,9 +1,8 @@
 const numbers = [45, 4, 9, 16, 25];
 
-const ans = numbers.filter(myFunction);
-
-console.log(ans);
-
-function myFunction(value, index, array) {
-    return value > 18;
+function myFunc(total, value, index, arr) {
+    return total + value;
 }
+
+const ans = numbers.reduceRight(myFunc);
+console.log(ans);
