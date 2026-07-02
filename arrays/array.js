@@ -1,8 +1,4 @@
-const numbers = [45, 4, 9, 16, 25];
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
 
-function myFunc(total, value, index, arr) {
-    return total + value;
-}
-
-const ans = numbers.reduceRight(myFunc);
-console.log(ans);
+const [a, b, , ...rest] = arr1;
+console.log(rest);
