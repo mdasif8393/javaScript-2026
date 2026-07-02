@@ -1,5 +1,5 @@
-const numbers = [45, 4, 9, 16, 25];
+let a = "Sakib";
 
-for (let x in numbers) {
-    console.log(numbers[x]);
+for (let x of a) {
+    console.log(x);
 }
