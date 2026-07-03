@@ -1,5 +1,9 @@
-let a = "Sakib";
+let i = 0;
+let text = "";
 
-for (let x of a) {
-    console.log(x);
+do {
+    console.log(i);
+    i++;
 }
+while (i < 10)
+
