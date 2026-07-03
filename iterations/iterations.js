@@ -1,9 +1,4 @@
-let i = 0;
-let text = "";
+const myIterator = [1, 2, 3, 4, 5, 6, 7];
 
-do {
-    console.log(i);
-    i++;
-}
-while (i < 10)
-
+const r = myIterator.take(5);
+console.log(r);
