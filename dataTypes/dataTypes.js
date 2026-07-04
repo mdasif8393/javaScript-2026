@@ -1,4 +1,4 @@
-let firstName = "John";
-let lastName = "Doe";
+const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
 
-[firstName, lastName] = [lastName, firstName]
+let [fruit1, , , fruit2] = fruits;
+console.log(fruit2);
