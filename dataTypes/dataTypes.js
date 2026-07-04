@@ -1,1 +1,1 @@
-console.log(typeof 7);
+console.log(typeof NaN);
