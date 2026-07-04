@@ -1,4 +1,8 @@
-let x = NaN;
-let y = 5;
+const dates = [
+    new Date("2026-01-01"),
+    new Date("2026-12-24")
+];
 
-console.log(x + y);
+let text = dates.toLocaleString("en-US");
+
+console.log(text);
