@@ -1,8 +1,4 @@
-const dates = [
-    new Date("2026-01-01"),
-    new Date("2026-12-24")
-];
+let firstName = "John";
+let lastName = "Doe";
 
-let text = dates.toLocaleString("en-US");
-
-console.log(text);
+[firstName, lastName] = [lastName, firstName]
