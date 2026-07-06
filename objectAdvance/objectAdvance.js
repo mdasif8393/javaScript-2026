@@ -1,10 +1,5 @@
-const person = {
-    name: "Sumit",
-    age: 35,
-    getName: function () {
-        return "Sumit";
-    }
+// "use strict";
+function myFunction() {
+    alert(this); // will alert "undefined"
 }
-
-const p = person.getName();
-console.log(p);
+myFunction();
