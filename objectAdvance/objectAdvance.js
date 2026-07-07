@@ -1,15 +1,11 @@
 const person = {
     firstName: "John",
     lastName: "Doe",
-    fullName: function () {
-        return this.firstName + " " + this.lastName;
+    language: "",
+    set lang(lang) {
+        this.language = lang;
     }
-}
+};
 
-const member = {
-    firstName: "Hege",
-    lastName: "Nilsen",
-}
-
-let fullName = person.fullName.bind(member);
-console.log(fullName());
+person.lang = "en";
+console.log(person);
