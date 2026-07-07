@@ -1,11 +1,15 @@
 const person = {
     firstName: "John",
     lastName: "Doe",
-    age: 50, eyeColor: "blue"
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
 }
 
-const x = person;
+const member = {
+    firstName: "Hege",
+    lastName: "Nilsen",
+}
 
-x.age = 18;
-
-console.log(person.age);
+let fullName = person.fullName.bind(member);
+console.log(fullName());
