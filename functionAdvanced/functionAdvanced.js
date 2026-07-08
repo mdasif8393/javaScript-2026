@@ -1,13 +1,6 @@
-// const x = function (a, b) {
-//     return a + b;
-// }
-
-// const res = x(2, 3);
-// console.log(res);
-
 function myFunction(a, b) {
-    return a + b;
+    return arguments.length;
 }
 
-const res = myFunction(2, 3);
-console.log(res);
+const x = myFunction.toString();
+console.log(x);
