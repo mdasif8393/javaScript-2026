@@ -9,6 +9,5 @@ const person = {
 
 Object.freeze(person);
 
-
 const ans = Object.isFrozen(person);
 console.log(ans);
