@@ -1,3 +1,5 @@
+"use strict"
+// Create Object
 const person = {
     firstName: "John",
     lastName: "Doe",
@@ -5,7 +7,8 @@ const person = {
     eyeColor: "blue"
 };
 
-// Get the Keys
-const keys = Object.keys(person);
+Object.freeze(person);
 
-console.log(keys);
+
+const ans = Object.isFrozen(person);
+console.log(ans);
