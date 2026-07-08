@@ -1,6 +1,14 @@
-function myFunction(a, b) {
-    return arguments.length;
+function a(x) {
+    x.one = 7;
+
+    return x.one * x.two;
 }
 
-const x = myFunction.toString();
-console.log(x);
+let m = {
+    one: 4,
+    two: 5
+};
+
+console.log(a(m));
+
+console.log(m);
