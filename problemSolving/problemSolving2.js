@@ -1,5 +1,11 @@
-const sentence = "Learn with Sumit is all about teaching web development skills and techniques in an efficient and practical manner. If you are just getting started in web development, Learn with Sumit has all the tools you need to learn the newest and most popular technologies to convert you from a no stack to full stack developer. Learn with Sumit also deep dives into advanced topics using the latest best practices for you seasoned web developers.";
+function linearSearch(arr, val) {
+    const len = arr.length;
+    for (let i = 0; i < len; i++) {
+        if (arr[i] === val) {
+            return i;
+        }
+    }
+    return "not found";
+}
 
-const matches = sentence.match(/sumit/gi);
-const occurences = matches ? matches.length : 0;
-console.log(occurences);
+console.log(linearSearch(['a', 'b', 'c', 'd', 'c'], 'c'));
