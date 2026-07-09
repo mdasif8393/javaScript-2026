@@ -1,0 +1,1 @@
+<button onclick="this.innerHTML='Clicked!'">Click Me</button>
