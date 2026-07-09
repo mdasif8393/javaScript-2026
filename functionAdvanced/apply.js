@@ -1,9 +1,4 @@
-const person1 = { name: "John" };
-const person2 = { name: "Paul" };
-const person3 = { name: "Ringo" };
+const arr = [10, 30, 60, 11, 50, 90, 70];
 
-function hello(message) {
-    return message + " " + this.name;
-}
-
-console.log(hello.apply(person2, ["Hello"]));
+const max = Math.max.apply(null, arr);
+console.log(max);
