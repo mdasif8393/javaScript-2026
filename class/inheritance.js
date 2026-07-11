@@ -13,10 +13,8 @@ class Car {
 }
 
 const myCar = new Car("Toyota");
-
 console.log(myCar.cnam);
 
 myCar.cnam = "BMW";
-
 console.log(myCar.cnam);
 
