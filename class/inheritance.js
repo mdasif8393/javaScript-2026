@@ -1,22 +1,22 @@
 class Car {
     constructor(brand) {
-        this.carname = brand;
+        this.carName = brand;
     }
-    present() {
-        return 'I have a ' + this.carname;
+
+    get cnam() {
+        return this.carName;
+    }
+
+    set cnam(x) {
+        this.carName = x;
     }
 }
 
-class Model extends Car {
-    constructor(brand, mod) {
-        super(brand);
-        this.model = mod;
-    }
-    show() {
-        return this.present() + ', it is a ' + this.model;
-    }
-}
+const myCar = new Car("Toyota");
 
-let myCar = new Model("Ford", "Mustang");
+console.log(myCar.cnam);
 
-console.log(myCar.show());
+myCar.cnam = "BMW";
+
+console.log(myCar.cnam);
+
