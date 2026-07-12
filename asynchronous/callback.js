@@ -33,7 +33,7 @@ function getCertificate() {
     setTimeout(function () {
         console.log("Congrats! You got the certificate");
     }, 1000)
-}
+};
 
 // send an anonimach function inside enroll and inside that function send progress as callback with progress perameter getCertificate
 enroll(function () {
