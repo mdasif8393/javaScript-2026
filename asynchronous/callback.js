@@ -6,7 +6,6 @@ function enroll(callback) {
 
     setTimeout(function () {
         if (paymentSuccess) {
-            console.log("Payment is successful...");
             callback();
         } else {
             console.log("Payment failed!");
@@ -19,7 +18,6 @@ function progress(callback) {
 
     setTimeout(function () {
         if (marks >= 80) {
-            console.log("You get enough marks..");
             callback();
         } else {
             console.log("You could not get enough marks to get the certificate");
