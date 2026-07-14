@@ -15,8 +15,14 @@
     <p id="p1">
       This is a text. This is a text. This is a text. This is a text.
     </p>
-    <button onclick="show()">Show</button>
-    <button>Hide</button>
+    <button
+      onclick="document.getElementById('p1').style.visibility = 'visible'"
+    >
+      Show
+    </button>
+    <button onclick="document.getElementById('p1').style.visibility = 'hidden'">
+      Hide
+    </button>
     <script src="./dom/changingCss.js"></script>
   </body>
 </html>
