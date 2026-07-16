@@ -1,2 +1,7 @@
-const para = document.getElementById("demo");
-para.innerHTML = "hello"
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
