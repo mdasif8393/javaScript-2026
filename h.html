@@ -12,9 +12,18 @@
       }
     </style>
 
-    <button onClick="goBack()">Go Back</button>
-    <button onClick="goForward()">Go Forward</button>
+    <div id="confirm"></div>
 
-    <script src="./bom/navigator.js"></script>
+    <div id="prompt"></div>
+
+    <div>
+      <input type="button" value="Show Confirm" onClick="showConfirm()" />
+    </div>
+
+    <div>
+      <input type="button" value="Show Prompt" onClick="showPrompt()" />
+    </div>
+
+    <script src="./bom/popup.js"></script>
   </body>
 </html>
