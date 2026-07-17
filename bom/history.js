@@ -1,7 +1,7 @@
-function back() {
+function goBack() {
     history.back();
 }
 
-function forward() {
+function goForward() {
     history.forward();
 }
