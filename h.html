@@ -12,18 +12,38 @@
       }
     </style>
 
-    <div id="confirm"></div>
-
-    <div id="prompt"></div>
-
     <div>
-      <input type="button" value="Show Confirm" onClick="showConfirm()" />
+      <input
+        type="button"
+        value="Set Name Cookie"
+        onclick="setCookie('name', 'Sumit Saha', 2)"
+      />
     </div>
 
     <div>
-      <input type="button" value="Show Prompt" onClick="showPrompt()" />
+      <input
+        type="button"
+        value="Set UserName Cookie"
+        onclick="setCookie('username', 'sumit', 2)"
+      />
     </div>
 
-    <script src="./bom/popup.js"></script>
+    <div>
+      <input
+        type="button"
+        value="Get Name Cookie"
+        onclick="alert(getCookie('name'))"
+      />
+    </div>
+
+    <div>
+      <input
+        type="button"
+        value="Get UserName Cookie"
+        onclick="alert(getCookie('username'))"
+      />
+    </div>
+
+    <script src="./bom/cookie.js"></script>
   </body>
 </html>
