@@ -12,33 +12,10 @@
       }
     </style>
 
-    <p>
-      <button onClick="setLocalStorage('username', 'sumit')">
-        Set local storage username
-      </button>
-    </p>
-    <p>
-      <button onClick="getLocalStorage('username')">
-        Get local storage username
-      </button>
-    </p>
-    <p>
-      <button onClick="setLocalStorage('name', 'Sumit Saha')">
-        Set local storage name
-      </button>
-    </p>
-    <p>
-      <button onClick="getLocalStorage('name')">Get local storage name</button>
-    </p>
-    <p>
-      <button onClick="removeLocalStorage('name')">
-        Remove local storage name
-      </button>
-    </p>
-    <p>
-      <button onClick="clearLocalStorage()">Clear local storage</button>
-    </p>
+    <button onclick="getData()">Fetch Data</button>
 
-    <script src="./webApi/storageApi.js"></script>
+    <p id="display"></p>
+
+    <script src="./webApi/promiseFetch.js"></script>
   </body>
 </html>
