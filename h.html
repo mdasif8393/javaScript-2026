@@ -12,38 +12,10 @@
       }
     </style>
 
-    <div>
-      <input
-        type="button"
-        value="Set Name Cookie"
-        onclick="setCookie('name', 'Sumit Saha', 2)"
-      />
-    </div>
+    <input id="id1" type="number" min="100" max="300" required />
+    <button onclick="validation()">OK</button>
 
-    <div>
-      <input
-        type="button"
-        value="Set UserName Cookie"
-        onclick="setCookie('username', 'sumit', 2)"
-      />
-    </div>
-
-    <div>
-      <input
-        type="button"
-        value="Get Name Cookie"
-        onclick="alert(getCookie('name'))"
-      />
-    </div>
-
-    <div>
-      <input
-        type="button"
-        value="Get UserName Cookie"
-        onclick="alert(getCookie('username'))"
-      />
-    </div>
-
-    <script src="./bom/cookie.js"></script>
+    <p id="demo"></p>
+    <script src="./webApi/formAPi.js"></script>
   </body>
 </html>
