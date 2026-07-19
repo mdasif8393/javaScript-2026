@@ -1,5 +1,6 @@
 const display = document.getElementById("display");
 
+
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -8,9 +9,11 @@ function getLocation() {
     }
 }
 
+
 function showPosition(position) {
     display.innerHTML = "Latitude: " + position.coords.latitude + "<br/>Longitude: " + position.coords.longitude;
 }
+
 
 function showError(error) {
     switch (error.code) {
@@ -28,3 +31,5 @@ function showError(error) {
             break;
     }
 }
+
+
