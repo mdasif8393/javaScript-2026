@@ -13,56 +13,28 @@
   </head>
   <body>
     <style>
-      body {
-        background-color: rgb(119, 114, 114);
-      }
       * {
-        font-family: "Anek Bangla", sans-serif;
-        color: whitesmoke;
-        background-color: #212121;
+        box-sizing: border-box;
       }
-
-      .container {
-        margin: 50px;
-      }
-
-      h1 {
-        border-bottom: 1px solid gray;
-      }
-
-      .parent {
-        margin-top: 30px;
-        padding: 20px;
-        border: 1px solid blueviolet;
-        border-radius: 5px;
-      }
-
-      form {
-        padding: 20px;
-        border: 1px solid green;
-        border-radius: 5px;
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+        padding: 0;
       }
       button {
-        background-color: antiquewhite;
-        border: 1px solid #333333;
-        border-radius: 5px;
-        padding: 6px 12px;
-        box-shadow: 4px 4px #000000;
-        font-size: 20px;
-        color: #333333;
+        display: block;
+        margin-bottom: 10px;
       }
     </style>
 
-    <div class="container">
-      <h1>ইভেন্ট প্রোপাগেশন কি?</h1>
-
-      <div class="parent" id="parent">
-        <form id="form">
-          <button type="button" id="button">Click here</button>
-        </form>
-      </div>
+    <div>
+      <button id="nextButton">Next</button>
+      <h3 id="header"></h3>
+      <button id="moreButton"></button>
+      <p id="description"></p>
+      <img id="image" />
     </div>
 
-    <script src="./eventPropagation/eventPropagation.js"></script>
+    <script src="./h.js"></script>
   </body>
 </html>
